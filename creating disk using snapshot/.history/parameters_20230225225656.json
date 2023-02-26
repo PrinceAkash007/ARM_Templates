@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "diskName": {
+            "value": "Disk-using-snapshot",
+            "metadata": {
+             "description": "It will create a disk from snapshot"   
+            }
+        },
+        "location": {
+            "value": "centralindia",
+            "metadata": {
+                "description": "location"
+            }
+        },
+        "sku": {
+            "value": "Standard_LRS",
+            "metadata": {
+                "description": "Type of the disk"
+            }
+        },
+        "diskSizeGb": {
+            "value": 128,
+            "metadata": {
+                "description": "Size of the disk that will take from snapshot"
+            }
+        },
+        "sourceResourceId": {
+            "value": "/subscriptions/8d25a816-c57d-40b6-9c04-ddc5923a4e18/resourceGroups/Akash-ARM-Terraform-RG/providers/Microsoft.Compute/snapshots/Akash-Terraform-snapshot",
+            "metadata": {
+                "description": "The id of the snapshot"
+            }
+        },
+        "hyperVGeneration": {
+            "value": ""
+        },
+        "diskEncryptionSetType": {
+            "value": "EncryptionAtRestWithPlatformKey"
+        },
+        "createOption": {
+            "value": "copy",
+            "metadata": {
+                "description": "It will copy all data from snapshot"
+            }
+        },
+        "dataAccessAuthMode": {
+            "value": "None"
+        },
+        "networkAccessPolicy": {
+            "value": "AllowAll"
+        },
+        "publicNetworkAccess": {
+            "value": "Enabled"
+        }
+    }
+}

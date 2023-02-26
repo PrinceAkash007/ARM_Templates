@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "apiVersion": {
+            "value": "2022-03-02"
+        },
+        "name": {
+            "value": "Akash-Terraform-snapshot"
+        },
+        "accountType": {
+            "value": "Standard_ZRS"
+        },
+        "location": {
+            "value": "centralindia"
+        },
+        "createOption": {
+            "value": "Copy"
+        },
+        "sourceUri": {
+            "value": "/subscriptions/8d25a816-c57d-40b6-9c04-ddc5923a4e18/resourceGroups/AKASH-ARM-TERRAFORM-RG/providers/Microsoft.Compute/disks/Akash-Terraform-VM_disk1_f7299e2cc8894ac187dfdaf921254422"
+        },
+        "incremental": {
+            "value": "false"
+        },
+        "diskEncryptionSetType": {
+            "value": "EncryptionAtRestWithPlatformKey"
+        },
+        "networkAccessPolicy": {
+            "value": "AllowAll"
+        },
+        "publicNetworkAccess": {
+            "value": "Enabled"
+        },
+        "dataAccessAuthMode": {
+            "value": "None"
+        }
+    }
+}

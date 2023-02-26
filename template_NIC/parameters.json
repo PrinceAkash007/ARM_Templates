@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "networkInterfaceName": {
+            "value": "Akash-Terraform-NIC"
+        },
+        "location": {
+            "value": "centralindia"
+        },
+        "subnetId": {
+            "value": "/subscriptions/8d25a816-c57d-40b6-9c04-ddc5923a4e18/resourceGroups/Akash-ARM-Terraform-RG/providers/Microsoft.Network/virtualNetworks/Akash-Terraform-Vnet/subnets/default"
+        },
+        "privateIPAllocationMethod": {
+            "value": "Dynamic"
+        }
+    }
+}

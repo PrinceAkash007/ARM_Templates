@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "diskName": {
+            "value": "Disk-using-snapshot"
+        },
+        "location": {
+            "value": "centralindia"
+        },
+        "sku": {
+            "value": "Standard_LRS"
+        },
+        "diskSizeGb": {
+            "value": 128
+        },
+        "sourceResourceId": {
+            "value": "/subscriptions/8d25a816-c57d-40b6-9c04-ddc5923a4e18/resourceGroups/Akash-ARM-Terraform-RG/providers/Microsoft.Compute/snapshots/Akash-Terraform-snapshot"
+        },
+        "hyperVGeneration": {
+            "value": ""
+        },
+        "diskEncryptionSetType": {
+            "value": "EncryptionAtRestWithPlatformKey"
+        },
+        "createOption": {
+            "value": "copy"
+        },
+        "dataAccessAuthMode": {
+            "value": "None"
+        },
+        "networkAccessPolicy": {
+            "value": "AllowAll"
+        },
+        "publicNetworkAccess": {
+            "value": "Enabled"
+        }
+    }
+}
